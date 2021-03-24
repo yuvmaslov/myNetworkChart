@@ -25,9 +25,13 @@ public class MyThread extends Thread {
     public void run() {
         try {
             eventObserver.onConnectionReady(tcpConnection);
-            String msg = in.readLine();
+            while (!currentThread().isInterrupted()) {
+                eventObserver.onReceiveString(tcpConnection, in.readLine());
+            }
         } catch (IOException e) {
-            e.printStackTrace();
+            eventObserver.onException(tcpConnection, e);
+        } finally {
+            eventObserver.onDisconnect(tcpConnection);
         }
 
     }
