@@ -3,6 +3,7 @@ package network;
 import java.io.*;
 import java.net.Socket;
 import java.nio.charset.Charset;
+import java.nio.charset.StandardCharsets;
 
 public class TCPConnection {
 
@@ -20,7 +21,7 @@ public class TCPConnection {
         this.socket = socket;
         this.eventObserver = eventObserver;
 //        in = new BufferedReader(new InputStreamReader(socket.getInputStream(), Charset.forName("UTF-8")));
-        out = new BufferedWriter(new OutputStreamWriter(socket.getOutputStream(), Charset.forName("UTF-8")));
+        out = new BufferedWriter(new OutputStreamWriter(socket.getOutputStream(), StandardCharsets.UTF_8));
         TCPConnection tcpConnection = this;
         rxThread = new MyThread(eventObserver, socket, tcpConnection);
         rxThread.start();
