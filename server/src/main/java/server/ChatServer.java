@@ -3,19 +3,23 @@ package server;
 import network.TCPConnection;
 import network.TCPConnectionObserver;
 
+import java.io.FileInputStream;
 import java.io.IOException;
 import java.net.ServerSocket;
 import java.util.ArrayList;
 import java.util.Calendar;
 import java.util.List;
+import java.util.Properties;
 
 public class ChatServer implements TCPConnectionObserver {
 
     private final List<TCPConnection> connections = new ArrayList<>();
+    public static final String PATH_TO_PROPERTIES = "server/src/main/resources/application.properties";
+//    int port = 8189;
 
-    private ChatServer() {
+    private ChatServer(int port) {
         System.out.println("Server is running...");
-        try (ServerSocket serverSocket = new ServerSocket(8189)) {
+        try (ServerSocket serverSocket = new ServerSocket(port)) {
             while (true) {
                 new TCPConnection(this, serverSocket.accept());
             }
@@ -25,7 +29,18 @@ public class ChatServer implements TCPConnectionObserver {
     }
 
     public static void main(String[] args) {
-        new ChatServer();
+        FileInputStream fileInputStream;
+        Properties prop = new Properties();
+        try {
+            fileInputStream = new FileInputStream(PATH_TO_PROPERTIES);
+            prop.load(fileInputStream);
+            String sPort = prop.getProperty("port");
+            int port = Integer.parseInt(sPort);
+            new ChatServer(port);
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+
     }
 
     @Override
