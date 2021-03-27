@@ -1,23 +1,20 @@
 package network;
 
-
-import java.io.*;
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
 import java.net.Socket;
-import java.nio.charset.Charset;
+import java.nio.charset.StandardCharsets;
 
 public class MyThread extends Thread {
 
-    private final Socket socket;
     private final TCPConnectionObserver eventObserver;
     private final BufferedReader in;
-    private final BufferedWriter out;
     private final TCPConnection tcpConnection;
 
     public MyThread(TCPConnectionObserver eventObserver, Socket socket, TCPConnection tcpConnection) throws IOException {
-        this.socket = socket;
         this.eventObserver = eventObserver;
-        in = new BufferedReader(new InputStreamReader(socket.getInputStream(), Charset.forName("UTF-8")));
-        out = new BufferedWriter(new OutputStreamWriter(socket.getOutputStream(), Charset.forName("UTF-8")));
+        in = new BufferedReader(new InputStreamReader(socket.getInputStream(), StandardCharsets.UTF_8));
         this.tcpConnection = tcpConnection;
     }
 
@@ -28,7 +25,7 @@ public class MyThread extends Thread {
             while (!currentThread().isInterrupted()) {
                 eventObserver.onReceiveString(tcpConnection, in.readLine());
             }
-        } catch (IOException e) {
+        } catch (IOException | InterruptedException e) {
             eventObserver.onException(tcpConnection, e);
         } finally {
             eventObserver.onDisconnect(tcpConnection);
