@@ -9,10 +9,14 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.io.FileInputStream;
 import java.io.IOException;
+import java.time.ZoneId;
+import java.time.ZonedDateTime;
 import java.util.Properties;
+import java.util.logging.*;
 
 public class Client extends JFrame implements ActionListener, TCPConnectionObserver {
 
+    private static final Logger logger = Logger.getLogger(Client.class.getName());
     private static final int WIGHT = 600;
     private static final int HEIGHT = 400;
     private final JTextArea log = new JTextArea();
@@ -24,7 +28,8 @@ public class Client extends JFrame implements ActionListener, TCPConnectionObser
     private TCPConnection connection;
 
     {
-        final String PATH_TO_PROPERTIES = "server/src/main/resources/application.properties";
+        final String PATH_TO_PROPERTIES = "client/src/main/resources/client.properties";
+
         FileInputStream fileInputStream;
         Properties prop = new Properties();
         try {
@@ -33,6 +38,7 @@ public class Client extends JFrame implements ActionListener, TCPConnectionObser
             String sPort = prop.getProperty("port");
             port = Integer.parseInt(sPort);
             ip = prop.getProperty("host");
+            logger.info("Properties is got");
         } catch (IOException e) {
             e.printStackTrace();
         }
@@ -54,13 +60,20 @@ public class Client extends JFrame implements ActionListener, TCPConnectionObser
 
         setVisible(true);
         try {
+            logger.info("Try create new connection");
             connection = new TCPConnection(this, ip, port);
         } catch (IOException e) {
             printMessage("Connection exception " + e);
         }
     }
 
-    public static void main(String[] args) {
+    public static void main(String[] args) throws IOException {
+        String PATH_TO_LOGS = "client/src/main/resources/client.log";
+        Handler handler = new FileHandler(PATH_TO_LOGS);
+        handler.setFormatter(new MyFormatter());
+        logger.setUseParentHandlers(false);
+        logger.addHandler(handler);
+        logger.info("Create new session");
         SwingUtilities.invokeLater(new Runnable() {
             @Override
             public void run() {
@@ -105,5 +118,13 @@ public class Client extends JFrame implements ActionListener, TCPConnectionObser
                 log.setCaretPosition(log.getDocument().getLength());
             }
         });
+    }
+
+    static class MyFormatter extends Formatter {
+        @Override
+        public String format(LogRecord record) {
+            var dateTime = ZonedDateTime.ofInstant(record.getInstant(), ZoneId.systemDefault());
+            return dateTime + " " + record.getLoggerName() + ": " + record.getMessage() + "\n";
+        }
     }
 }

@@ -9,14 +9,19 @@ import java.net.ServerSocket;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Properties;
+import java.util.logging.FileHandler;
+import java.util.logging.Handler;
+import java.util.logging.Logger;
 
 public class ChatServer implements TCPConnectionObserver {
 
     private final List<TCPConnection> connections = new ArrayList<>();
     public static final String PATH_TO_PROPERTIES = "server/src/main/resources/application.properties";
+    private static final Logger logger = Logger.getLogger(ChatServer.class.getName());
 
     private ChatServer(int port) {
-        System.out.println("Server is running...");
+        logger.info("Server is running...");
+//        System.out.println("Server is running...");
         try (ServerSocket serverSocket = new ServerSocket(port)) {
             while (true) {
                 new TCPConnection(this, serverSocket.accept());
@@ -27,6 +32,14 @@ public class ChatServer implements TCPConnectionObserver {
     }
 
     public static void main(String[] args) {
+        try {
+            String PATH_TO_PROPERTIES = "server/src/main/resources/application.logs";
+            Handler handler = new FileHandler();
+//            logger.setUseParentHandlers(false);
+            logger.addHandler(handler);
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
         FileInputStream fileInputStream;
         Properties prop = new Properties();
         try {
@@ -36,6 +49,7 @@ public class ChatServer implements TCPConnectionObserver {
             int port = Integer.parseInt(sPort);
             new ChatServer(port);
         } catch (IOException e) {
+            logger.warning(e.getMessage());
             e.printStackTrace();
         }
 
@@ -43,7 +57,9 @@ public class ChatServer implements TCPConnectionObserver {
 
     @Override
     public synchronized void onConnectionReady(TCPConnection tcpConnection) {
+        logger.info("Adding new connection to list on server");
         connections.add(tcpConnection);
+        logger.info("New connection is added to list on server");
         sendToAllConnections("Client connected: " + tcpConnection);
     }
 
