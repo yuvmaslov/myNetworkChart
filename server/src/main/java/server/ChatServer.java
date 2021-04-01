@@ -21,7 +21,7 @@ public class ChatServer implements TCPConnectionObserver {
 
     private ChatServer(int port) {
         logger.info("Server is running...");
-//        System.out.println("Server is running...");
+        System.out.println("Server is running...");
         try (ServerSocket serverSocket = new ServerSocket(port)) {
             while (true) {
                 new TCPConnection(this, serverSocket.accept());
@@ -33,9 +33,9 @@ public class ChatServer implements TCPConnectionObserver {
 
     public static void main(String[] args) {
         try {
-            String PATH_TO_PROPERTIES = "server/src/main/resources/serverLogs.logs";
-            Handler handler = new FileHandler(PATH_TO_PROPERTIES, true);
-//            logger.setUseParentHandlers(false);
+            String PATH_TO_LOGS = "server/src/main/resources/serverLogs.logs";
+            Handler handler = new FileHandler(PATH_TO_LOGS, true);
+            logger.setUseParentHandlers(false);
             logger.addHandler(handler);
         } catch (IOException e) {
             e.printStackTrace();
@@ -65,18 +65,23 @@ public class ChatServer implements TCPConnectionObserver {
 
     @Override
     public synchronized void onReceiveString(TCPConnection tcpConnection, String msg) {
+        logger.info("Send messages to all active users");
         sendToAllConnections(msg);
     }
 
     @Override
     public synchronized void onDisconnect(TCPConnection tcpConnection) {
+        logger.info(tcpConnection + " is disconnected");
         connections.remove(tcpConnection);
+        logger.info("Send messages to all active users that " + tcpConnection + " is disconnect");
         sendToAllConnections("Client disconnected: " + tcpConnection);
+
     }
 
     @Override
     public synchronized void onException(TCPConnection tcpConnection, Exception exception) {
         System.out.println("TCPConnection exception: " + exception);
+        logger.info(tcpConnection + " has exception " + exception);
     }
 
     private void sendToAllConnections(String msg) {
