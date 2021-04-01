@@ -26,6 +26,17 @@ public class TCPConnection {
         rxThread.start();
     }
 
+    public synchronized void sendString(String time, String value, String nick) {
+        try {
+            if (nick.equals("exit")) disconnect();
+            out.write(time + " " + nick + ": " + value + "\r\n");
+            out.flush();
+        } catch (IOException e) {
+            eventObserver.onException(TCPConnection.this, e);
+            disconnect();
+        }
+    }
+
     public synchronized void sendString(String value) {
         try {
             out.write(value + "\r\n");

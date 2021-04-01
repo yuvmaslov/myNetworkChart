@@ -9,8 +9,11 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.io.FileInputStream;
 import java.io.IOException;
+import java.time.LocalDateTime;
 import java.time.ZoneId;
 import java.time.ZonedDateTime;
+import java.time.format.DateTimeFormatter;
+import java.util.Date;
 import java.util.Properties;
 import java.util.logging.*;
 
@@ -88,7 +91,10 @@ public class Client extends JFrame implements ActionListener, TCPConnectionObser
         String msg = fieldInput.getText();
         if (msg.equals("")) return;
         fieldInput.setText(null);
-        connection.sendString(nickName.getText() + " " + msg);
+        DateTimeFormatter dtf = DateTimeFormatter.ofPattern("yyyy/MM/dd HH:mm:ss");
+        LocalDateTime now = LocalDateTime.now();
+        String time = dtf.format(now);
+        connection.sendString(time, msg, nickName.getText());
     }
 
     @Override

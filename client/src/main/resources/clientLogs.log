@@ -1,3 +1,51 @@
 2021-04-01T18:22:34.335124900+05:00[Asia/Yekaterinburg] client.Client: Create new session
 2021-04-01T18:22:34.627191300+05:00[Asia/Yekaterinburg] client.Client: Properties is got
 2021-04-01T18:22:34.681203500+05:00[Asia/Yekaterinburg] client.Client: Try create new connection
+2021-04-01T22:01:09.572286600+05:00[Asia/Yekaterinburg] client.Client: Create new session
+2021-04-01T22:01:09.884453+05:00[Asia/Yekaterinburg] client.Client: Properties is got
+2021-04-01T22:01:09.935464400+05:00[Asia/Yekaterinburg] client.Client: Try create new connection
+2021-04-01T22:01:09.960470600+05:00[Asia/Yekaterinburg] client.Client: Connection ready...TCPConnection: /192.168.1.2: 8081
+2021-04-01T22:01:09.969472300+05:00[Asia/Yekaterinburg] client.Client: TCPConnection: /192.168.1.2: 8081 got the message Client connected: TCPConnection: /192.168.1.2: 61144
+2021-04-01T22:01:09.969472300+05:00[Asia/Yekaterinburg] client.Client: TCPConnection: /192.168.1.2: 8081 sent the message Client connected: TCPConnection: /192.168.1.2: 61144
+2021-04-01T22:01:34.229917800+05:00[Asia/Yekaterinburg] client.Client: TCPConnection: /192.168.1.2: 8081 got the message Yury hello
+2021-04-01T22:01:34.229917800+05:00[Asia/Yekaterinburg] client.Client: TCPConnection: /192.168.1.2: 8081 sent the message Yury hello
+2021-04-01T22:26:42.197461100+05:00[Asia/Yekaterinburg] client.Client: Create new session
+2021-04-01T22:26:42.417718200+05:00[Asia/Yekaterinburg] client.Client: Properties is got
+2021-04-01T22:26:42.459727700+05:00[Asia/Yekaterinburg] client.Client: Try create new connection
+2021-04-01T22:26:42.471731700+05:00[Asia/Yekaterinburg] client.Client: Connection ready...TCPConnection: /192.168.1.2: 8081
+2021-04-01T22:26:42.472731100+05:00[Asia/Yekaterinburg] client.Client: TCPConnection: /192.168.1.2: 8081 got the message Client connected: TCPConnection: /192.168.1.2: 61448
+2021-04-01T22:26:42.472731100+05:00[Asia/Yekaterinburg] client.Client: TCPConnection: /192.168.1.2: 8081 sent the message Client connected: TCPConnection: /192.168.1.2: 61448
+2021-04-01T22:27:05.180001300+05:00[Asia/Yekaterinburg] client.Client: TCPConnection: /192.168.1.2: 8081 has java.net.SocketException: Connection reset
+2021-04-01T22:27:05.181003200+05:00[Asia/Yekaterinburg] client.Client: TCPConnection: /192.168.1.2: 8081 is disconnect
+2021-04-01T22:27:21.736246200+05:00[Asia/Yekaterinburg] client.Client: Create new session
+2021-04-01T22:27:21.959202400+05:00[Asia/Yekaterinburg] client.Client: Properties is got
+2021-04-01T22:27:22.002211100+05:00[Asia/Yekaterinburg] client.Client: Try create new connection
+2021-04-01T22:27:22.015214600+05:00[Asia/Yekaterinburg] client.Client: Connection ready...TCPConnection: /192.168.1.2: 8081
+2021-04-01T22:27:22.028217900+05:00[Asia/Yekaterinburg] client.Client: TCPConnection: /192.168.1.2: 8081 got the message Client connected: TCPConnection: /192.168.1.2: 61458
+2021-04-01T22:27:22.028908400+05:00[Asia/Yekaterinburg] client.Client: TCPConnection: /192.168.1.2: 8081 sent the message Client connected: TCPConnection: /192.168.1.2: 61458
+2021-04-01T22:27:33.978839700+05:00[Asia/Yekaterinburg] client.Client: TCPConnection: /192.168.1.2: 8081 got the message Client connected: TCPConnection: /192.168.1.2: 61464
+2021-04-01T22:27:33.978839700+05:00[Asia/Yekaterinburg] client.Client: TCPConnection: /192.168.1.2: 8081 sent the message Client connected: TCPConnection: /192.168.1.2: 61464
+2021-04-01T22:27:50.228409+05:00[Asia/Yekaterinburg] client.Client: TCPConnection: /192.168.1.2: 8081 got the message 2021/04/01 22:27:50 Yury hello
+2021-04-01T22:27:50.228409+05:00[Asia/Yekaterinburg] client.Client: TCPConnection: /192.168.1.2: 8081 sent the message 2021/04/01 22:27:50 Yury hello
+2021-04-01T22:28:00.861414300+05:00[Asia/Yekaterinburg] client.Client: TCPConnection: /192.168.1.2: 8081 got the message 2021/04/01 22:28:00 Client Hello, Yury
+2021-04-01T22:28:00.861414300+05:00[Asia/Yekaterinburg] client.Client: TCPConnection: /192.168.1.2: 8081 sent the message 2021/04/01 22:28:00 Client Hello, Yury
+2021-04-01T22:28:26.689407600+05:00[Asia/Yekaterinburg] client.Client: TCPConnection: /192.168.1.2: 8081 has java.net.SocketException: Connection reset
+2021-04-01T22:28:26.690405900+05:00[Asia/Yekaterinburg] client.Client: TCPConnection: /192.168.1.2: 8081 is disconnect
+2021-04-01T22:28:35.687447700+05:00[Asia/Yekaterinburg] client.Client: Create new session
+2021-04-01T22:28:35.950614+05:00[Asia/Yekaterinburg] client.Client: Properties is got
+2021-04-01T22:28:35.994623600+05:00[Asia/Yekaterinburg] client.Client: Try create new connection
+2021-04-01T22:28:36.006626800+05:00[Asia/Yekaterinburg] client.Client: Connection ready...TCPConnection: /192.168.1.2: 8081
+2021-04-01T22:28:36.006626800+05:00[Asia/Yekaterinburg] client.Client: TCPConnection: /192.168.1.2: 8081 got the message Client connected: TCPConnection: /192.168.1.2: 61502
+2021-04-01T22:28:36.007626600+05:00[Asia/Yekaterinburg] client.Client: TCPConnection: /192.168.1.2: 8081 sent the message Client connected: TCPConnection: /192.168.1.2: 61502
+2021-04-01T22:28:49.701398200+05:00[Asia/Yekaterinburg] client.Client: TCPConnection: /192.168.1.2: 8081 got the message 2021/04/01 22:28:49 Client: hello, all
+2021-04-01T22:28:49.701398200+05:00[Asia/Yekaterinburg] client.Client: TCPConnection: /192.168.1.2: 8081 sent the message 2021/04/01 22:28:49 Client: hello, all
+2021-04-01T22:28:58.116398900+05:00[Asia/Yekaterinburg] client.Client: TCPConnection: /192.168.1.2: 8081 got the message 2021/04/01 22:28:58 Yury hello, client
+2021-04-01T22:28:58.116398900+05:00[Asia/Yekaterinburg] client.Client: TCPConnection: /192.168.1.2: 8081 sent the message 2021/04/01 22:28:58 Yury hello, client
+2021-04-01T22:30:11.175444600+05:00[Asia/Yekaterinburg] client.Client: Create new session
+2021-04-01T22:30:11.401101500+05:00[Asia/Yekaterinburg] client.Client: Properties is got
+2021-04-01T22:30:11.445111800+05:00[Asia/Yekaterinburg] client.Client: Try create new connection
+2021-04-01T22:30:11.457114100+05:00[Asia/Yekaterinburg] client.Client: Connection ready...TCPConnection: /192.168.1.2: 8081
+2021-04-01T22:30:11.472117900+05:00[Asia/Yekaterinburg] client.Client: TCPConnection: /192.168.1.2: 8081 got the message Client connected: TCPConnection: /192.168.1.2: 61518
+2021-04-01T22:30:11.472117900+05:00[Asia/Yekaterinburg] client.Client: TCPConnection: /192.168.1.2: 8081 sent the message Client connected: TCPConnection: /192.168.1.2: 61518
+2021-04-01T22:30:16.084618+05:00[Asia/Yekaterinburg] client.Client: TCPConnection: /192.168.1.2: 8081 got the message 2021/04/01 22:30:16 Yury: hello
+2021-04-01T22:30:16.084618+05:00[Asia/Yekaterinburg] client.Client: TCPConnection: /192.168.1.2: 8081 sent the message 2021/04/01 22:30:16 Yury: hello

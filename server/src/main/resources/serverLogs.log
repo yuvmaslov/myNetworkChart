@@ -1,0 +1,41 @@
+2021-04-01T19:04:18.055661500+05:00[Asia/Yekaterinburg] server.ChatServer: Server is running...
+2021-04-01T19:04:28.791338300+05:00[Asia/Yekaterinburg] server.ChatServer: Adding new connection to list on server
+2021-04-01T19:04:28.792338600+05:00[Asia/Yekaterinburg] server.ChatServer: New connection is added to list on server
+2021-04-01T19:04:34.777636200+05:00[Asia/Yekaterinburg] server.ChatServer: Send messages to all active users
+2021-04-01T19:04:59.734462700+05:00[Asia/Yekaterinburg] server.ChatServer: TCPConnection: /192.168.1.2: 60239 has exception java.net.SocketException: Connection reset
+2021-04-01T19:04:59.734462700+05:00[Asia/Yekaterinburg] server.ChatServer: TCPConnection: /192.168.1.2: 60239 is disconnected
+2021-04-01T19:04:59.737463300+05:00[Asia/Yekaterinburg] server.ChatServer: Send messages to all active users that TCPConnection: /192.168.1.2: 60239 is disconnect
+2021-04-01T19:08:10.228741700+05:00[Asia/Yekaterinburg] server.ChatServer: Server is running...
+2021-04-01T19:08:20.794059100+05:00[Asia/Yekaterinburg] server.ChatServer: Adding new connection to list on server
+2021-04-01T19:08:20.794059100+05:00[Asia/Yekaterinburg] server.ChatServer: New connection is added to list on server
+2021-04-01T19:08:25.922133600+05:00[Asia/Yekaterinburg] server.ChatServer: Send messages to all active users
+2021-04-01T19:08:29.969223900+05:00[Asia/Yekaterinburg] server.ChatServer: Send messages to all active users
+2021-04-01T19:09:08.005196300+05:00[Asia/Yekaterinburg] server.ChatServer: Server is running...
+2021-04-01T19:09:11.903185500+05:00[Asia/Yekaterinburg] server.ChatServer: Adding new connection to list on server
+2021-04-01T19:09:11.904185300+05:00[Asia/Yekaterinburg] server.ChatServer: New connection is added to list on server
+2021-04-01T19:09:17.546233900+05:00[Asia/Yekaterinburg] server.ChatServer: Send messages to all active users
+2021-04-01T19:09:20.721114300+05:00[Asia/Yekaterinburg] server.ChatServer: Send messages to all active users
+2021-04-01T19:10:38.461701800+05:00[Asia/Yekaterinburg] server.ChatServer: Server is running...
+2021-04-01T19:11:41.605868700+05:00[Asia/Yekaterinburg] server.ChatServer: Server is running...
+2021-04-01T19:11:46.108454800+05:00[Asia/Yekaterinburg] server.ChatServer: Adding new connection to list on server
+2021-04-01T19:11:46.108454800+05:00[Asia/Yekaterinburg] server.ChatServer: New connection is added to list on server
+2021-04-01T19:11:51.898778600+05:00[Asia/Yekaterinburg] server.ChatServer: Send messages to all active users
+2021-04-01T19:12:05.321691600+05:00[Asia/Yekaterinburg] server.ChatServer: Send messages to all active users
+2021-04-01T19:12:56.250901+05:00[Asia/Yekaterinburg] server.ChatServer: TCPConnection: /192.168.1.2: 60320 has exception java.net.SocketException: Connection reset
+2021-04-01T19:12:56.250901+05:00[Asia/Yekaterinburg] server.ChatServer: TCPConnection: /192.168.1.2: 60320 is disconnected
+2021-04-01T19:12:56.253902600+05:00[Asia/Yekaterinburg] server.ChatServer: Send messages to all active users that TCPConnection: /192.168.1.2: 60320 is disconnect
+2021-04-01T19:13:14.139525300+05:00[Asia/Yekaterinburg] server.ChatServer: Server is running...
+2021-04-01T19:13:18.633455800+05:00[Asia/Yekaterinburg] server.ChatServer: Adding new connection to list on server
+2021-04-01T19:13:18.633455800+05:00[Asia/Yekaterinburg] server.ChatServer: New connection is added to list on server
+2021-04-01T19:15:06.276273+05:00[Asia/Yekaterinburg] server.ChatServer: TCPConnection: /192.168.1.2: 60340 has exception java.net.SocketException: Connection reset
+2021-04-01T19:15:06.276273+05:00[Asia/Yekaterinburg] server.ChatServer: TCPConnection: /192.168.1.2: 60340 is disconnected
+2021-04-01T19:15:06.279274700+05:00[Asia/Yekaterinburg] server.ChatServer: Send messages to all active users that TCPConnection: /192.168.1.2: 60340 is disconnect
+2021-04-01T21:35:58.667498200+05:00[Asia/Yekaterinburg] server.ChatServer: Server is running...
+2021-04-01T21:36:04.861165300+05:00[Asia/Yekaterinburg] server.ChatServer: Server is running...
+2021-04-01T21:40:13.613712200+05:00[Asia/Yekaterinburg] server.ChatServer: Server is running...
+2021-04-01T21:40:18.579885400+05:00[Asia/Yekaterinburg] server.ChatServer: Adding new connection to list on server
+2021-04-01T21:40:18.579885400+05:00[Asia/Yekaterinburg] server.ChatServer: New connection is added to list on server
+2021-04-01T21:40:33.988940200+05:00[Asia/Yekaterinburg] server.ChatServer: Send messages to all active users
+2021-04-01T21:41:00.964416700+05:00[Asia/Yekaterinburg] server.ChatServer: TCPConnection: /192.168.1.2: 61022 has exception java.net.SocketException: Connection reset
+2021-04-01T21:41:00.964416700+05:00[Asia/Yekaterinburg] server.ChatServer: TCPConnection: /192.168.1.2: 61022 is disconnected
+2021-04-01T21:41:00.967417200+05:00[Asia/Yekaterinburg] server.ChatServer: Send messages to all active users that TCPConnection: /192.168.1.2: 61022 is disconnect
