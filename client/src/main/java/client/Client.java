@@ -68,8 +68,9 @@ public class Client extends JFrame implements ActionListener, TCPConnectionObser
     }
 
     public static void main(String[] args) throws IOException {
-        String PATH_TO_LOGS = "client/src/main/resources/client.log";
-        Handler handler = new FileHandler(PATH_TO_LOGS);
+        String PATH_TO_LOGS = "client/src/main/resources/clientLogs.log";
+        Handler handler = new FileHandler(PATH_TO_LOGS, true);
+
         handler.setFormatter(new MyFormatter());
         logger.setUseParentHandlers(false);
         logger.addHandler(handler);
@@ -93,20 +94,25 @@ public class Client extends JFrame implements ActionListener, TCPConnectionObser
     @Override
     public void onConnectionReady(TCPConnection tcpConnection) {
         printMessage("Connection ready...");
+        logger.info("Connection ready..." + tcpConnection);
     }
 
     @Override
-    public void onReceiveString(TCPConnection tcpConnection, String msg) throws InterruptedException {
+    public void onReceiveString(TCPConnection tcpConnection, String msg) {
+        logger.info(tcpConnection + " got the message " + msg);
         printMessage(msg);
+        logger.info(tcpConnection + " sent the message " + msg);
     }
 
     @Override
     public void onDisconnect(TCPConnection tcpConnection) {
         printMessage("Connection closed...");
+        logger.info(tcpConnection + " is disconnect");
     }
 
     @Override
     public void onException(TCPConnection tcpConnection, Exception exception) {
+        logger.info(tcpConnection + " has " + exception);
         printMessage("Connection exception " + exception);
     }
 

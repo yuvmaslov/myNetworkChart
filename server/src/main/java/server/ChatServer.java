@@ -33,8 +33,8 @@ public class ChatServer implements TCPConnectionObserver {
 
     public static void main(String[] args) {
         try {
-            String PATH_TO_PROPERTIES = "server/src/main/resources/application.logs";
-            Handler handler = new FileHandler();
+            String PATH_TO_PROPERTIES = "server/src/main/resources/serverLogs.logs";
+            Handler handler = new FileHandler(PATH_TO_PROPERTIES, true);
 //            logger.setUseParentHandlers(false);
             logger.addHandler(handler);
         } catch (IOException e) {
