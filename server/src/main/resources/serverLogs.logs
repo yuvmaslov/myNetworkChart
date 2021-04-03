@@ -1,0 +1,464 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+<record>
+  <date>2021-04-01T17:00:56.526386Z</date>
+  <millis>1617296456526</millis>
+  <nanos>386000</nanos>
+  <sequence>0</sequence>
+  <logger>server.ChatServer</logger>
+  <level>INFO</level>
+  <class>server.ChatServer</class>
+  <method>&lt;init&gt;</method>
+  <thread>1</thread>
+  <message>Server is running...</message>
+</record>
+</log>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+<record>
+  <date>2021-04-01T17:01:01.561495Z</date>
+  <millis>1617296461561</millis>
+  <nanos>495000</nanos>
+  <sequence>0</sequence>
+  <logger>server.ChatServer</logger>
+  <level>INFO</level>
+  <class>server.ChatServer</class>
+  <method>&lt;init&gt;</method>
+  <thread>1</thread>
+  <message>Server is running...</message>
+</record>
+<record>
+  <date>2021-04-01T17:01:09.946467800Z</date>
+  <millis>1617296469946</millis>
+  <nanos>467800</nanos>
+  <sequence>1</sequence>
+  <logger>server.ChatServer</logger>
+  <level>INFO</level>
+  <class>server.ChatServer</class>
+  <method>onConnectionReady</method>
+  <thread>17</thread>
+  <message>Adding new connection to list on server</message>
+</record>
+<record>
+  <date>2021-04-01T17:01:09.947467500Z</date>
+  <millis>1617296469947</millis>
+  <nanos>467500</nanos>
+  <sequence>2</sequence>
+  <logger>server.ChatServer</logger>
+  <level>INFO</level>
+  <class>server.ChatServer</class>
+  <method>onConnectionReady</method>
+  <thread>17</thread>
+  <message>New connection is added to list on server</message>
+</record>
+<record>
+  <date>2021-04-01T17:01:34.229917800Z</date>
+  <millis>1617296494229</millis>
+  <nanos>917800</nanos>
+  <sequence>3</sequence>
+  <logger>server.ChatServer</logger>
+  <level>INFO</level>
+  <class>server.ChatServer</class>
+  <method>onReceiveString</method>
+  <thread>17</thread>
+  <message>Send messages to all active users</message>
+</record>
+<record>
+  <date>2021-04-01T17:11:33.533972Z</date>
+  <millis>1617297093533</millis>
+  <nanos>972000</nanos>
+  <sequence>4</sequence>
+  <logger>server.ChatServer</logger>
+  <level>INFO</level>
+  <class>server.ChatServer</class>
+  <method>onException</method>
+  <thread>17</thread>
+  <message>TCPConnection: /192.168.1.2: 61144 has exception java.net.SocketException: Connection reset</message>
+</record>
+<record>
+  <date>2021-04-01T17:11:33.534972100Z</date>
+  <millis>1617297093534</millis>
+  <nanos>972100</nanos>
+  <sequence>5</sequence>
+  <logger>server.ChatServer</logger>
+  <level>INFO</level>
+  <class>server.ChatServer</class>
+  <method>onDisconnect</method>
+  <thread>17</thread>
+  <message>TCPConnection: /192.168.1.2: 61144 is disconnected</message>
+</record>
+<record>
+  <date>2021-04-01T17:11:33.537972500Z</date>
+  <millis>1617297093537</millis>
+  <nanos>972500</nanos>
+  <sequence>6</sequence>
+  <logger>server.ChatServer</logger>
+  <level>INFO</level>
+  <class>server.ChatServer</class>
+  <method>onDisconnect</method>
+  <thread>17</thread>
+  <message>Send messages to all active users that TCPConnection: /192.168.1.2: 61144 is disconnect</message>
+</record>
+<record>
+  <date>2021-04-01T17:26:42.465728400Z</date>
+  <millis>1617298002465</millis>
+  <nanos>728400</nanos>
+  <sequence>7</sequence>
+  <logger>server.ChatServer</logger>
+  <level>INFO</level>
+  <class>server.ChatServer</class>
+  <method>onConnectionReady</method>
+  <thread>18</thread>
+  <message>Adding new connection to list on server</message>
+</record>
+<record>
+  <date>2021-04-01T17:26:42.465728400Z</date>
+  <millis>1617298002465</millis>
+  <nanos>728400</nanos>
+  <sequence>8</sequence>
+  <logger>server.ChatServer</logger>
+  <level>INFO</level>
+  <class>server.ChatServer</class>
+  <method>onConnectionReady</method>
+  <thread>18</thread>
+  <message>New connection is added to list on server</message>
+</record>
+</log>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+<record>
+  <date>2021-04-01T17:27:07.682127100Z</date>
+  <millis>1617298027682</millis>
+  <nanos>127100</nanos>
+  <sequence>0</sequence>
+  <logger>server.ChatServer</logger>
+  <level>INFO</level>
+  <class>server.ChatServer</class>
+  <method>&lt;init&gt;</method>
+  <thread>1</thread>
+  <message>Server is running...</message>
+</record>
+<record>
+  <date>2021-04-01T17:27:22.010214500Z</date>
+  <millis>1617298042010</millis>
+  <nanos>214500</nanos>
+  <sequence>1</sequence>
+  <logger>server.ChatServer</logger>
+  <level>INFO</level>
+  <class>server.ChatServer</class>
+  <method>onConnectionReady</method>
+  <thread>17</thread>
+  <message>Adding new connection to list on server</message>
+</record>
+<record>
+  <date>2021-04-01T17:27:22.010214500Z</date>
+  <millis>1617298042010</millis>
+  <nanos>214500</nanos>
+  <sequence>2</sequence>
+  <logger>server.ChatServer</logger>
+  <level>INFO</level>
+  <class>server.ChatServer</class>
+  <method>onConnectionReady</method>
+  <thread>17</thread>
+  <message>New connection is added to list on server</message>
+</record>
+<record>
+  <date>2021-04-01T17:27:33.977839700Z</date>
+  <millis>1617298053977</millis>
+  <nanos>839700</nanos>
+  <sequence>3</sequence>
+  <logger>server.ChatServer</logger>
+  <level>INFO</level>
+  <class>server.ChatServer</class>
+  <method>onConnectionReady</method>
+  <thread>18</thread>
+  <message>Adding new connection to list on server</message>
+</record>
+<record>
+  <date>2021-04-01T17:27:33.977839700Z</date>
+  <millis>1617298053977</millis>
+  <nanos>839700</nanos>
+  <sequence>4</sequence>
+  <logger>server.ChatServer</logger>
+  <level>INFO</level>
+  <class>server.ChatServer</class>
+  <method>onConnectionReady</method>
+  <thread>18</thread>
+  <message>New connection is added to list on server</message>
+</record>
+<record>
+  <date>2021-04-01T17:27:50.227417200Z</date>
+  <millis>1617298070227</millis>
+  <nanos>417200</nanos>
+  <sequence>5</sequence>
+  <logger>server.ChatServer</logger>
+  <level>INFO</level>
+  <class>server.ChatServer</class>
+  <method>onReceiveString</method>
+  <thread>17</thread>
+  <message>Send messages to all active users</message>
+</record>
+<record>
+  <date>2021-04-01T17:28:00.860412900Z</date>
+  <millis>1617298080860</millis>
+  <nanos>412900</nanos>
+  <sequence>6</sequence>
+  <logger>server.ChatServer</logger>
+  <level>INFO</level>
+  <class>server.ChatServer</class>
+  <method>onReceiveString</method>
+  <thread>18</thread>
+  <message>Send messages to all active users</message>
+</record>
+</log>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+<record>
+  <date>2021-04-01T17:28:28.293274700Z</date>
+  <millis>1617298108293</millis>
+  <nanos>274700</nanos>
+  <sequence>0</sequence>
+  <logger>server.ChatServer</logger>
+  <level>INFO</level>
+  <class>server.ChatServer</class>
+  <method>&lt;init&gt;</method>
+  <thread>1</thread>
+  <message>Server is running...</message>
+</record>
+<record>
+  <date>2021-04-01T17:28:32.663251300Z</date>
+  <millis>1617298112663</millis>
+  <nanos>251300</nanos>
+  <sequence>1</sequence>
+  <logger>server.ChatServer</logger>
+  <level>INFO</level>
+  <class>server.ChatServer</class>
+  <method>onConnectionReady</method>
+  <thread>17</thread>
+  <message>Adding new connection to list on server</message>
+</record>
+<record>
+  <date>2021-04-01T17:28:32.664251400Z</date>
+  <millis>1617298112664</millis>
+  <nanos>251400</nanos>
+  <sequence>2</sequence>
+  <logger>server.ChatServer</logger>
+  <level>INFO</level>
+  <class>server.ChatServer</class>
+  <method>onConnectionReady</method>
+  <thread>17</thread>
+  <message>New connection is added to list on server</message>
+</record>
+<record>
+  <date>2021-04-01T17:28:36.000626Z</date>
+  <millis>1617298116000</millis>
+  <nanos>626000</nanos>
+  <sequence>3</sequence>
+  <logger>server.ChatServer</logger>
+  <level>INFO</level>
+  <class>server.ChatServer</class>
+  <method>onConnectionReady</method>
+  <thread>18</thread>
+  <message>Adding new connection to list on server</message>
+</record>
+<record>
+  <date>2021-04-01T17:28:36.000626Z</date>
+  <millis>1617298116000</millis>
+  <nanos>626000</nanos>
+  <sequence>4</sequence>
+  <logger>server.ChatServer</logger>
+  <level>INFO</level>
+  <class>server.ChatServer</class>
+  <method>onConnectionReady</method>
+  <thread>18</thread>
+  <message>New connection is added to list on server</message>
+</record>
+<record>
+  <date>2021-04-01T17:28:49.700397300Z</date>
+  <millis>1617298129700</millis>
+  <nanos>397300</nanos>
+  <sequence>5</sequence>
+  <logger>server.ChatServer</logger>
+  <level>INFO</level>
+  <class>server.ChatServer</class>
+  <method>onReceiveString</method>
+  <thread>17</thread>
+  <message>Send messages to all active users</message>
+</record>
+<record>
+  <date>2021-04-01T17:28:58.115398200Z</date>
+  <millis>1617298138115</millis>
+  <nanos>398200</nanos>
+  <sequence>6</sequence>
+  <logger>server.ChatServer</logger>
+  <level>INFO</level>
+  <class>server.ChatServer</class>
+  <method>onReceiveString</method>
+  <thread>18</thread>
+  <message>Send messages to all active users</message>
+</record>
+<record>
+  <date>2021-04-01T17:29:44.883168500Z</date>
+  <millis>1617298184883</millis>
+  <nanos>168500</nanos>
+  <sequence>7</sequence>
+  <logger>server.ChatServer</logger>
+  <level>INFO</level>
+  <class>server.ChatServer</class>
+  <method>onException</method>
+  <thread>18</thread>
+  <message>TCPConnection: /192.168.1.2: 61502 has exception java.net.SocketException: Connection reset</message>
+</record>
+<record>
+  <date>2021-04-01T17:29:44.884169400Z</date>
+  <millis>1617298184884</millis>
+  <nanos>169400</nanos>
+  <sequence>8</sequence>
+  <logger>server.ChatServer</logger>
+  <level>INFO</level>
+  <class>server.ChatServer</class>
+  <method>onDisconnect</method>
+  <thread>18</thread>
+  <message>TCPConnection: /192.168.1.2: 61502 is disconnected</message>
+</record>
+<record>
+  <date>2021-04-01T17:29:44.887169100Z</date>
+  <millis>1617298184887</millis>
+  <nanos>169100</nanos>
+  <sequence>9</sequence>
+  <logger>server.ChatServer</logger>
+  <level>INFO</level>
+  <class>server.ChatServer</class>
+  <method>onDisconnect</method>
+  <thread>18</thread>
+  <message>Send messages to all active users that TCPConnection: /192.168.1.2: 61502 is disconnect</message>
+</record>
+<record>
+  <date>2021-04-01T17:29:52.035398200Z</date>
+  <millis>1617298192035</millis>
+  <nanos>398200</nanos>
+  <sequence>10</sequence>
+  <logger>server.ChatServer</logger>
+  <level>INFO</level>
+  <class>server.ChatServer</class>
+  <method>onException</method>
+  <thread>17</thread>
+  <message>TCPConnection: /192.168.1.2: 61501 has exception java.net.SocketException: Connection reset</message>
+</record>
+<record>
+  <date>2021-04-01T17:29:52.035398200Z</date>
+  <millis>1617298192035</millis>
+  <nanos>398200</nanos>
+  <sequence>11</sequence>
+  <logger>server.ChatServer</logger>
+  <level>INFO</level>
+  <class>server.ChatServer</class>
+  <method>onDisconnect</method>
+  <thread>17</thread>
+  <message>TCPConnection: /192.168.1.2: 61501 is disconnected</message>
+</record>
+<record>
+  <date>2021-04-01T17:29:52.035398200Z</date>
+  <millis>1617298192035</millis>
+  <nanos>398200</nanos>
+  <sequence>12</sequence>
+  <logger>server.ChatServer</logger>
+  <level>INFO</level>
+  <class>server.ChatServer</class>
+  <method>onDisconnect</method>
+  <thread>17</thread>
+  <message>Send messages to all active users that TCPConnection: /192.168.1.2: 61501 is disconnect</message>
+</record>
+</log>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+<record>
+  <date>2021-04-01T17:30:07.887460800Z</date>
+  <millis>1617298207887</millis>
+  <nanos>460800</nanos>
+  <sequence>0</sequence>
+  <logger>server.ChatServer</logger>
+  <level>INFO</level>
+  <class>server.ChatServer</class>
+  <method>&lt;init&gt;</method>
+  <thread>1</thread>
+  <message>Server is running...</message>
+</record>
+<record>
+  <date>2021-04-01T17:30:11.453113300Z</date>
+  <millis>1617298211453</millis>
+  <nanos>113300</nanos>
+  <sequence>1</sequence>
+  <logger>server.ChatServer</logger>
+  <level>INFO</level>
+  <class>server.ChatServer</class>
+  <method>onConnectionReady</method>
+  <thread>17</thread>
+  <message>Adding new connection to list on server</message>
+</record>
+<record>
+  <date>2021-04-01T17:30:11.453113300Z</date>
+  <millis>1617298211453</millis>
+  <nanos>113300</nanos>
+  <sequence>2</sequence>
+  <logger>server.ChatServer</logger>
+  <level>INFO</level>
+  <class>server.ChatServer</class>
+  <method>onConnectionReady</method>
+  <thread>17</thread>
+  <message>New connection is added to list on server</message>
+</record>
+<record>
+  <date>2021-04-01T17:30:16.084618Z</date>
+  <millis>1617298216084</millis>
+  <nanos>618000</nanos>
+  <sequence>3</sequence>
+  <logger>server.ChatServer</logger>
+  <level>INFO</level>
+  <class>server.ChatServer</class>
+  <method>onReceiveString</method>
+  <thread>17</thread>
+  <message>Send messages to all active users</message>
+</record>
+<record>
+  <date>2021-04-01T17:30:20.018508100Z</date>
+  <millis>1617298220018</millis>
+  <nanos>508100</nanos>
+  <sequence>4</sequence>
+  <logger>server.ChatServer</logger>
+  <level>INFO</level>
+  <class>server.ChatServer</class>
+  <method>onException</method>
+  <thread>17</thread>
+  <message>TCPConnection: /192.168.1.2: 61518 has exception java.net.SocketException: Connection reset</message>
+</record>
+<record>
+  <date>2021-04-01T17:30:20.018508100Z</date>
+  <millis>1617298220018</millis>
+  <nanos>508100</nanos>
+  <sequence>5</sequence>
+  <logger>server.ChatServer</logger>
+  <level>INFO</level>
+  <class>server.ChatServer</class>
+  <method>onDisconnect</method>
+  <thread>17</thread>
+  <message>TCPConnection: /192.168.1.2: 61518 is disconnected</message>
+</record>
+<record>
+  <date>2021-04-01T17:30:20.021510500Z</date>
+  <millis>1617298220021</millis>
+  <nanos>510500</nanos>
+  <sequence>6</sequence>
+  <logger>server.ChatServer</logger>
+  <level>INFO</level>
+  <class>server.ChatServer</class>
+  <method>onDisconnect</method>
+  <thread>17</thread>
+  <message>Send messages to all active users that TCPConnection: /192.168.1.2: 61518 is disconnect</message>
+</record>
+</log>
