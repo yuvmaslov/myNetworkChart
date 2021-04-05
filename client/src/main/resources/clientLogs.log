@@ -49,3 +49,9 @@
 2021-04-01T22:30:11.472117900+05:00[Asia/Yekaterinburg] client.Client: TCPConnection: /192.168.1.2: 8081 sent the message Client connected: TCPConnection: /192.168.1.2: 61518
 2021-04-01T22:30:16.084618+05:00[Asia/Yekaterinburg] client.Client: TCPConnection: /192.168.1.2: 8081 got the message 2021/04/01 22:30:16 Yury: hello
 2021-04-01T22:30:16.084618+05:00[Asia/Yekaterinburg] client.Client: TCPConnection: /192.168.1.2: 8081 sent the message 2021/04/01 22:30:16 Yury: hello
+2021-04-05T15:06:53.318756500+05:00[Asia/Yekaterinburg] client.Client: Create new session
+2021-04-05T15:06:53.752873600+05:00[Asia/Yekaterinburg] client.Client: Properties is got
+2021-04-05T15:06:53.837893400+05:00[Asia/Yekaterinburg] client.Client: Try create new connection
+2021-04-05T15:06:53.863898800+05:00[Asia/Yekaterinburg] client.Client: Connection ready...TCPConnection: /192.168.1.2: 8081
+2021-04-05T15:06:53.878902700+05:00[Asia/Yekaterinburg] client.Client: TCPConnection: /192.168.1.2: 8081 got the message Client connected: TCPConnection: /192.168.1.2: 60064
+2021-04-05T15:06:53.879902600+05:00[Asia/Yekaterinburg] client.Client: TCPConnection: /192.168.1.2: 8081 sent the message Client connected: TCPConnection: /192.168.1.2: 60064

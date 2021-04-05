@@ -462,3 +462,79 @@
   <message>Send messages to all active users that TCPConnection: /192.168.1.2: 61518 is disconnect</message>
 </record>
 </log>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+<record>
+  <date>2021-04-05T10:06:44.149642600Z</date>
+  <millis>1617617204149</millis>
+  <nanos>642600</nanos>
+  <sequence>0</sequence>
+  <logger>server.ChatServer</logger>
+  <level>INFO</level>
+  <class>server.ChatServer</class>
+  <method>&lt;init&gt;</method>
+  <thread>1</thread>
+  <message>Server is running...</message>
+</record>
+<record>
+  <date>2021-04-05T10:06:53.848895900Z</date>
+  <millis>1617617213848</millis>
+  <nanos>895900</nanos>
+  <sequence>1</sequence>
+  <logger>server.ChatServer</logger>
+  <level>INFO</level>
+  <class>server.ChatServer</class>
+  <method>onConnectionReady</method>
+  <thread>17</thread>
+  <message>Adding new connection to list on server</message>
+</record>
+<record>
+  <date>2021-04-05T10:06:53.849895600Z</date>
+  <millis>1617617213849</millis>
+  <nanos>895600</nanos>
+  <sequence>2</sequence>
+  <logger>server.ChatServer</logger>
+  <level>INFO</level>
+  <class>server.ChatServer</class>
+  <method>onConnectionReady</method>
+  <thread>17</thread>
+  <message>New connection is added to list on server</message>
+</record>
+<record>
+  <date>2021-04-05T10:06:58.780718800Z</date>
+  <millis>1617617218780</millis>
+  <nanos>718800</nanos>
+  <sequence>3</sequence>
+  <logger>server.ChatServer</logger>
+  <level>INFO</level>
+  <class>server.ChatServer</class>
+  <method>onException</method>
+  <thread>17</thread>
+  <message>TCPConnection: /192.168.1.2: 60064 has exception java.net.SocketException: Connection reset</message>
+</record>
+<record>
+  <date>2021-04-05T10:06:58.781719600Z</date>
+  <millis>1617617218781</millis>
+  <nanos>719600</nanos>
+  <sequence>4</sequence>
+  <logger>server.ChatServer</logger>
+  <level>INFO</level>
+  <class>server.ChatServer</class>
+  <method>onDisconnect</method>
+  <thread>17</thread>
+  <message>TCPConnection: /192.168.1.2: 60064 is disconnected</message>
+</record>
+<record>
+  <date>2021-04-05T10:06:58.784720200Z</date>
+  <millis>1617617218784</millis>
+  <nanos>720200</nanos>
+  <sequence>5</sequence>
+  <logger>server.ChatServer</logger>
+  <level>INFO</level>
+  <class>server.ChatServer</class>
+  <method>onDisconnect</method>
+  <thread>17</thread>
+  <message>Send messages to all active users that TCPConnection: /192.168.1.2: 60064 is disconnect</message>
+</record>
+</log>
